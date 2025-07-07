@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TechHub Academy</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="https://cdn-icons-png.flaticon.com/32/3079/3079508.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="https://cdn-icons-png.flaticon.com/180/3079/3079508.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="https://cdn-icons-png.flaticon.com/32/3079/3079508.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="https://cdn-icons-png.flaticon.com/16/3079/3079508.png"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="./bootstrap-5.3.7-dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="./css/custom-colors.css" />
+    </head>
+    <body class="bg-black-light">
+        <!-- Seção NavBar -->
+        <nav class="navbar navbar-expand-lg bg-black-total">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">TechHub Academy</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#"
+                                >Início</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#cursos"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Cursos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#programacao"
+                                        >Programação</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="#design-digital"
+                                        >Design Digital</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="#marketing-digital"
+                                        >Marketing Digital</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="#marketing-digital"
+                                        >Data Science</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a class="dropdown-item" href="#cursos"
+                                        >Todos os Cursos</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Metodologia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Buscar cursos..."
+                            aria-label="Search"
+                        />
+                        <button
+                            class="btn btn-orange text-white fw-bold px-4"
+                            type="submit"
+                        >
+                            Buscar
+                        </button>
+                    </form>
+                    <div class="d-flex">
+                        <a
+                            href="#"
+                            class="btn btn-orange text-white fw-bold px-4 ms-2"
+                        >
+                            Matricule-se
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <!-- Seção Carrousel -->
+            <div
+                id="carouselExampleInterval"
+                class="carousel slide mt-4"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img
+                            src="./assets/img-1.png"
+                            class="d-block w-100"
+                            alt="TechHub Academy - Transforme seu futuro digital"
+                        />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img
+                            src="./assets/img-2.png"
+                            class="d-block w-100"
+                            alt="Cursos inovadores em tecnologia"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="./assets/img-3.png"
+                            class="d-block w-100"
+                            alt="Metodologia prática e projetos reais"
+                        />
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- Seção Card - Sobre a Escola -->
+            <div class="my-5">
+                <div class="card bg-black-medium border-orange mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-orange fw-bold">
+                                    Transforme seu Futuro Digital
+                                </h5>
+                                <p class="card-text text-white">
+                                    Na TechHub Academy, oferecemos cursos
+                                    inovadores em programação, design digital e
+                                    marketing. Nossa metodologia prática e
+                                    projetos reais preparam você para o mercado
+                                    de trabalho em tecnologia.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-gray"
+                                        >Mais de 5.000 alunos formados</small
+                                    >
+                                </p>
+                                <a
+                                    href="#"
+                                    class="btn btn-orange text-white mt-2"
+                                >
+                                    Conheça Nossos Cursos
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img
+                                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                class="img-fluid rounded-end h-100"
+                                style="object-fit: cover"
+                                alt="Estudantes estudando tecnologia"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção Cursos - Grid System -->
+            <div id="cursos" class="container my-5">
+                <h2 class="text-center mb-4 text-orange fw-bold">
+                    Nossos Cursos
+                </h2>
+                <p class="text-center text-white mb-5">
+                    Descubra nossa metodologia prática e projetos reais que
+                    preparam você para o mercado
+                </p>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div
+                            id="programacao"
+                            class="card h-100 text-center bg-black-medium border-orange"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                class="card-img-top"
+                                style="height: 200px; object-fit: cover"
+                                alt="Curso de Programação"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title text-orange">
+                                    Programação
+                                </h5>
+                                <p class="card-text text-white">
+                                    Aprenda JavaScript, Python, React e outras
+                                    tecnologias modernas com projetos práticos.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <a href="#" class="btn btn-orange text-white"
+                                    >Saiba Mais</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div
+                            id="design-digital"
+                            class="card h-100 text-center bg-black-medium border-orange"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                class="card-img-top"
+                                style="height: 200px; object-fit: cover"
+                                alt="Curso de Design Digital"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title text-orange">
+                                    Design Digital
+                                </h5>
+                                <p class="card-text text-white">
+                                    Domine Figma, Adobe Creative Suite e UX/UI
+                                    Design para criar experiências incríveis.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <a href="#" class="btn btn-orange text-white"
+                                    >Saiba Mais</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div
+                            id="marketing-digital"
+                            class="card h-100 text-center bg-black-medium border-orange"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                class="card-img-top"
+                                style="height: 200px; object-fit: cover"
+                                alt="Curso de Marketing Digital"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title text-orange">
+                                    Marketing Digital
+                                </h5>
+                                <p class="card-text text-white">
+                                    Estratégias de SEO, redes sociais, Google
+                                    Ads e analytics para impulsionar negócios.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <a href="#" class="btn btn-orange text-white"
+                                    >Saiba Mais</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div
+                            class="card h-100 text-center bg-black-medium border-orange"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                class="card-img-top"
+                                style="height: 200px; object-fit: cover"
+                                alt="Curso de Data Science"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title text-orange">
+                                    Data Science
+                                </h5>
+                                <p class="card-text text-white">
+                                    Análise de dados, machine learning e
+                                    visualização com Python, R e ferramentas
+                                    modernas.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <a href="#" class="btn btn-orange text-white"
+                                    >Saiba Mais</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção Educadores -->
+            <div class="container text-center my-5">
+                <h3 class="mb-2 text-orange fw-bold">Nossos Instrutores</h3>
+                <p class="text-white mb-5">
+                    Profissionais experientes do mercado prontos para te ensinar
+                </p>
+
+                <div class="row justify-content-between g-4">
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="instructor-card">
+                            <img
+                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                class="img-fluid rounded-circle shadow-orange"
+                                style="
+                                    width: 150px;
+                                    height: 150px;
+                                    object-fit: cover;
+                                "
+                                alt="João Silva - Instrutor de Programação"
+                            />
+                            <h6 class="text-orange mt-3 mb-1">João Silva</h6>
+                            <small class="text-white">Programação</small>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="instructor-card">
+                            <img
+                                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                class="img-fluid rounded-circle shadow-orange"
+                                style="
+                                    width: 150px;
+                                    height: 150px;
+                                    object-fit: cover;
+                                "
+                                alt="Maria Santos - Instrutora de Design"
+                            />
+                            <h6 class="text-orange mt-3 mb-1">Maria Santos</h6>
+                            <small class="text-white">Design Digital</small>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="instructor-card">
+                            <img
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                class="img-fluid rounded-circle shadow-orange"
+                                style="
+                                    width: 150px;
+                                    height: 150px;
+                                    object-fit: cover;
+                                "
+                                alt="Carlos Oliveira - Instrutor de Marketing"
+                            />
+                            <h6 class="text-orange mt-3 mb-1">
+                                Carlos Oliveira
+                            </h6>
+                            <small class="text-white">Marketing Digital</small>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="instructor-card">
+                            <img
+                                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                class="img-fluid rounded-circle shadow-orange"
+                                style="
+                                    width: 150px;
+                                    height: 150px;
+                                    object-fit: cover;
+                                "
+                                alt="Ana Costa - Instrutora de Data Science"
+                            />
+                            <h6 class="text-orange mt-3 mb-1">Ana Costa</h6>
+                            <small class="text-white">Data Science</small>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="instructor-card">
+                            <img
+                                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                class="img-fluid rounded-circle shadow-orange"
+                                style="
+                                    width: 150px;
+                                    height: 150px;
+                                    object-fit: cover;
+                                "
+                                alt="Pedro Lima - Instrutor de DevOps"
+                            />
+                            <h6 class="text-orange mt-3 mb-1">Pedro Lima</h6>
+                            <small class="text-white">DevOps</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <a href="#" class="btn btn-orange text-white fw-bold px-4">
+                        Conheça Toda a Equipe
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção Footer -->
+        <footer class="bg-black-total text-white py-5 mt-5">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h5 class="text-orange fw-bold mb-3">
+                            TechHub Academy
+                        </h5>
+                        <p class="text-white-50">
+                            Transformando vidas através da educação digital.
+                            Cursos práticos e projetos reais para o mercado de
+                            trabalho.
+                        </p>
+                        <div
+                            class="d-flex gap-3 justify-content-center justify-content-md-start"
+                        >
+                            <a href="#" class="text-orange">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-orange">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-orange">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-orange">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h6 class="text-orange fw-bold mb-3">Cursos</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Programação</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Design Digital</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Marketing Digital</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Data Science</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h6 class="text-orange fw-bold mb-3">Institucional</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Sobre Nós</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Metodologia</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Instrutores</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Carreiras</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="contato" class="col-lg-3 col-md-6 mb-4">
+                        <h6 class="text-orange fw-bold mb-3">Contato</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 text-white-50">
+                                <i class="fas fa-envelope me-2"></i>
+                                contato@techhubacademy.com.br
+                            </li>
+                            <li class="mb-2 text-white-50">
+                                <i class="fas fa-phone me-2"></i>
+                                (11) 9999-9999
+                            </li>
+                            <li class="mb-2 text-white-50">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                São Paulo, SP
+                            </li>
+                        </ul>
+                        <a
+                            href="#"
+                            class="btn btn-orange text-white fw-bold mt-3"
+                        >
+                            Fale Conosco
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="border-orange my-4" />
+
+                <div class="row align-items-center text-center text-md-start">
+                    <div class="col-md-6">
+                        <small class="text-white-50">
+                            © 2025 TechHub Academy. Todos os direitos
+                            reservados.
+                        </small>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <small class="text-white-50">
+                            <a
+                                href="#"
+                                class="text-white-50 text-decoration-none me-3"
+                                >Termos de Uso</a
+                            >
+                            <a
+                                href="#"
+                                class="text-white-50 text-decoration-none"
+                                >Política de Privacidade</a
+                            >
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

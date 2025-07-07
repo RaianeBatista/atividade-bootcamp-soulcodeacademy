@@ -1,0 +1,625 @@
+/* ========================================
+   CORES BOOTSTRAP 5 - ARQUIVO CUSTOMIZADO
+   ======================================== */
+
+/* FONTE POPPINS GLOBAL */
+* {
+    font-family: "Poppins", sans-serif !important;
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif !important;
+}
+
+.navbar-brand {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 600 !important;
+}
+
+.nav-link {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.btn {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 500 !important;
+}
+
+/* CORES PRIMÁRIAS DO BOOTSTRAP */
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+
+/* CLASSES DE BACKGROUND PERSONALIZADAS */
+.bg-blue {
+    background-color: var(--bs-blue) !important;
+}
+.bg-indigo {
+    background-color: var(--bs-indigo) !important;
+}
+.bg-purple {
+    background-color: var(--bs-purple) !important;
+}
+.bg-pink {
+    background-color: var(--bs-pink) !important;
+}
+.bg-red {
+    background-color: var(--bs-red) !important;
+}
+.bg-orange {
+    background-color: var(--bs-orange) !important;
+}
+.bg-yellow {
+    background-color: var(--bs-yellow) !important;
+}
+.bg-green {
+    background-color: var(--bs-green) !important;
+}
+.bg-teal {
+    background-color: var(--bs-teal) !important;
+}
+.bg-cyan {
+    background-color: var(--bs-cyan) !important;
+}
+.bg-gray {
+    background-color: var(--bs-gray) !important;
+}
+.bg-gray-dark {
+    background-color: var(--bs-gray-dark) !important;
+}
+
+/* CLASSES DE TEXTO PERSONALIZADAS */
+.text-blue {
+    color: var(--bs-blue) !important;
+}
+.text-indigo {
+    color: var(--bs-indigo) !important;
+}
+.text-purple {
+    color: var(--bs-purple) !important;
+}
+.text-pink {
+    color: var(--bs-pink) !important;
+}
+.text-red {
+    color: var(--bs-red) !important;
+}
+.text-orange {
+    color: var(--bs-orange) !important;
+}
+.text-yellow {
+    color: var(--bs-yellow) !important;
+}
+.text-green {
+    color: var(--bs-green) !important;
+}
+.text-teal {
+    color: var(--bs-teal) !important;
+}
+.text-cyan {
+    color: var(--bs-cyan) !important;
+}
+.text-gray {
+    color: var(--bs-gray) !important;
+}
+.text-gray-dark {
+    color: var(--bs-gray-dark) !important;
+}
+
+/* CLASSES DE BORDA PERSONALIZADAS */
+.border-blue {
+    border-color: var(--bs-blue) !important;
+}
+.border-indigo {
+    border-color: var(--bs-indigo) !important;
+}
+.border-purple {
+    border-color: var(--bs-purple) !important;
+}
+.border-pink {
+    border-color: var(--bs-pink) !important;
+}
+.border-red {
+    border-color: var(--bs-red) !important;
+}
+.border-orange {
+    border-color: var(--bs-orange) !important;
+}
+.border-yellow {
+    border-color: var(--bs-yellow) !important;
+}
+.border-green {
+    border-color: var(--bs-green) !important;
+}
+.border-teal {
+    border-color: var(--bs-teal) !important;
+}
+.border-cyan {
+    border-color: var(--bs-cyan) !important;
+}
+.border-gray {
+    border-color: var(--bs-gray) !important;
+}
+.border-gray-dark {
+    border-color: var(--bs-gray-dark) !important;
+}
+
+/* TONS MAIS CLAROS E ESCUROS */
+.bg-blue-light {
+    background-color: #b6d7ff !important;
+}
+.bg-blue-dark {
+    background-color: #084298 !important;
+}
+.bg-green-light {
+    background-color: #a3cfbb !important;
+}
+.bg-green-dark {
+    background-color: #0f5132 !important;
+}
+.bg-red-light {
+    background-color: #f1aeb5 !important;
+}
+.bg-red-dark {
+    background-color: #842029 !important;
+}
+.bg-orange-light {
+    background-color: #feb272 !important;
+}
+.bg-orange-dark {
+    background-color: #ca5010 !important;
+}
+.bg-purple-light {
+    background-color: #b8a9d9 !important;
+}
+.bg-purple-dark {
+    background-color: #4c2c85 !important;
+}
+
+/* GRADIENTES PERSONALIZADOS */
+.bg-gradient-blue {
+    background: linear-gradient(
+        135deg,
+        var(--bs-blue),
+        var(--bs-indigo)
+    ) !important;
+}
+.bg-gradient-sunset {
+    background: linear-gradient(
+        135deg,
+        var(--bs-orange),
+        var(--bs-red)
+    ) !important;
+}
+.bg-gradient-ocean {
+    background: linear-gradient(
+        135deg,
+        var(--bs-cyan),
+        var(--bs-blue)
+    ) !important;
+}
+.bg-gradient-forest {
+    background: linear-gradient(
+        135deg,
+        var(--bs-green),
+        var(--bs-teal)
+    ) !important;
+}
+
+/* CORES TRANSPARENTES */
+.bg-blue-transparent {
+    background-color: rgba(13, 110, 253, 0.1) !important;
+}
+.bg-green-transparent {
+    background-color: rgba(25, 135, 84, 0.1) !important;
+}
+.bg-red-transparent {
+    background-color: rgba(220, 53, 69, 0.1) !important;
+}
+.bg-orange-transparent {
+    background-color: rgba(253, 126, 20, 0.1) !important;
+}
+.bg-purple-transparent {
+    background-color: rgba(111, 66, 193, 0.1) !important;
+}
+
+/* HOVER EFFECTS */
+.bg-blue:hover {
+    background-color: var(--bs-indigo) !important;
+}
+.bg-orange:hover {
+    background-color: var(--bs-red) !important;
+}
+.bg-green:hover {
+    background-color: var(--bs-teal) !important;
+}
+.bg-purple:hover {
+    background-color: var(--bs-pink) !important;
+}
+
+/* CLASSES PARA BOTÕES PERSONALIZADOS */
+.btn-blue {
+    color: #fff;
+    background-color: var(--bs-blue);
+    border-color: var(--bs-blue);
+}
+.btn-blue:hover {
+    color: #fff;
+    background-color: var(--bs-indigo);
+    border-color: var(--bs-indigo);
+}
+
+.btn-orange {
+    color: #fff;
+    background-color: var(--bs-orange);
+    border-color: var(--bs-orange);
+}
+.btn-orange:hover {
+    color: #fff;
+    background-color: var(--bs-red);
+    border-color: var(--bs-red);
+}
+
+.btn-purple {
+    color: #fff;
+    background-color: var(--bs-purple);
+    border-color: var(--bs-purple);
+}
+.btn-purple:hover {
+    color: #fff;
+    background-color: var(--bs-pink);
+    border-color: var(--bs-pink);
+}
+
+.btn-teal {
+    color: #fff;
+    background-color: var(--bs-teal);
+    border-color: var(--bs-teal);
+}
+.btn-teal:hover {
+    color: #fff;
+    background-color: var(--bs-cyan);
+    border-color: var(--bs-cyan);
+}
+
+/* BOTÃO OUTLINE PERSONALIZADO COM COR LARANJA */
+.btn-outline-warning {
+    color: var(--bs-orange) !important;
+    border-color: var(--bs-orange) !important;
+}
+
+.btn-outline-warning:hover {
+    color: #fff !important;
+    background-color: var(--bs-orange) !important;
+    border-color: var(--bs-orange) !important;
+}
+
+.btn-outline-warning:focus {
+    box-shadow: 0 0 0 0.25rem rgba(253, 126, 20, 0.25) !important;
+}
+
+/* CORES PARA TEXTO EM ELEMENTOS ESPECÍFICOS */
+.navbar-brand-colored {
+    color: var(--bs-orange) !important;
+}
+.nav-link-colored {
+    color: var(--bs-purple) !important;
+}
+.nav-link-colored:hover {
+    color: var(--bs-pink) !important;
+}
+
+/* CLASSES DE UTILIDADE PARA SHADOWS COLORIDAS */
+.shadow-blue {
+    box-shadow: 0 0.5rem 1rem rgba(13, 110, 253, 0.15) !important;
+}
+.shadow-green {
+    box-shadow: 0 0.5rem 1rem rgba(25, 135, 84, 0.15) !important;
+}
+.shadow-red {
+    box-shadow: 0 0.5rem 1rem rgba(220, 53, 69, 0.15) !important;
+}
+.shadow-orange {
+    box-shadow: 0 0.5rem 1rem rgba(253, 126, 20, 0.15) !important;
+}
+.shadow-purple {
+    box-shadow: 0 0.5rem 1rem rgba(111, 66, 193, 0.15) !important;
+}
+
+/* TONS PERSONALIZADOS EXTRAS */
+.bg-black-total {
+    background-color: #000000 !important;
+}
+.bg-black-light {
+    background-color: #2c2c2c !important;
+}
+.bg-black-medium {
+    background-color: #1a1a1a !important;
+}
+
+/* NAVBAR ESCURA - ESTILOS PERSONALIZADOS */
+.navbar.bg-black-total {
+    min-height: 100px !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.navbar.bg-black-total .navbar-nav .nav-link {
+    color: #ffffff !important;
+    padding-top: 0.8rem !important;
+    padding-bottom: 0.8rem !important;
+}
+.navbar.bg-black-total .navbar-nav .nav-link:hover {
+    color: #cccccc !important;
+}
+.navbar.bg-black-total .navbar-nav .nav-link.active {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+.navbar.bg-black-total .navbar-toggler {
+    border-color: #ffffff;
+}
+.navbar.bg-black-total .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar.bg-black-total .navbar-brand {
+    padding-top: 0.8rem !important;
+    padding-bottom: 0.8rem !important;
+}
+
+/* Responsividade da navbar */
+@media (max-width: 992px) {
+    .navbar.bg-black-total {
+        min-height: 80px !important;
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar.bg-black-total {
+        min-height: 70px !important;
+        padding-top: 0.8rem !important;
+        padding-bottom: 0.8rem !important;
+    }
+}
+
+/* CAROUSEL - AJUSTES DE TAMANHO */
+.carousel {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    max-height: 500px;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .carousel {
+        max-height: 300px;
+    }
+
+    .carousel-inner {
+        max-height: 300px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel {
+        max-height: 250px;
+    }
+
+    .carousel-inner {
+        max-height: 250px;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+}
+
+/* CARDS PERSONALIZADOS */
+.card.bg-black-medium {
+    background-color: #1a1a1a !important;
+    border: 2px solid var(--bs-orange);
+}
+
+.card.bg-black-medium {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid var(--bs-orange);
+}
+
+.card.bg-black-medium:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(253, 126, 20, 0.3);
+}
+
+.card.bg-black-medium .card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card.bg-black-medium:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.card.bg-black-medium .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.card.bg-black-medium .card-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.card.bg-black-medium .card-footer {
+    border-top: 1px solid var(--bs-orange);
+    padding: 1rem;
+}
+
+/* Responsividade para cards de cursos */
+@media (max-width: 768px) {
+    .card.bg-black-medium .card-img-top {
+        height: 180px !important;
+    }
+
+    .card.bg-black-medium .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card.bg-black-medium .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card.bg-black-medium .card-img-top {
+        height: 160px !important;
+    }
+}
+
+/* SEÇÃO INSTRUTORES - CLASSES UTILITÁRIAS */
+.instructor-card {
+    transition: transform 0.3s ease;
+    padding: 1rem;
+}
+
+.instructor-card:hover {
+    transform: translateY(-10px);
+}
+
+.instructor-card img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid var(--bs-orange);
+}
+
+.instructor-card:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(253, 126, 20, 0.4);
+}
+
+.instructor-card h6 {
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.instructor-card small {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+/* Responsividade para seção de instrutores */
+@media (max-width: 768px) {
+    .instructor-card img {
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    .instructor-card h6 {
+        font-size: 0.95rem;
+    }
+
+    .instructor-card small {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .instructor-card img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .instructor-card {
+        padding: 0.5rem;
+    }
+}
+
+/* FOOTER PERSONALIZADO */
+footer.bg-black-total {
+    border-top: 3px solid var(--bs-orange);
+}
+
+footer.bg-black-total a:hover {
+    color: var(--bs-orange) !important;
+    transition: color 0.3s ease;
+}
+
+footer.bg-black-total .border-orange {
+    border-color: var(--bs-orange) !important;
+    opacity: 0.3;
+}
+
+footer.bg-black-total h5,
+footer.bg-black-total h6 {
+    position: relative;
+}
+
+footer.bg-black-total h5::after,
+footer.bg-black-total h6::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--bs-orange);
+}
+
+/* Responsividade do footer */
+@media (max-width: 768px) {
+    footer.bg-black-total .col-md-6.text-md-end {
+        text-align: start !important;
+        margin-top: 1rem;
+    }
+
+    footer.bg-black-total .d-flex.gap-3 {
+        justify-content: start;
+    }
+}

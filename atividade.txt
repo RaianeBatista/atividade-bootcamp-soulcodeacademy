@@ -1,0 +1,5 @@
+Crie uma página para apresentação de uma marca fictícia da sua escolha. Você deve seguir o layout sugerido no wireframe disponibilizado.
+
+A proposta é desenvolver uma landing page simples e bem estruturada. Ela deve ser totalmente responsiva e usar componentes do Bootstrap para agilizar o desenvolvimento.
+
+A entrega deve ser realizada através de uma pasta compactada no formato ZIP (ou via link público do GitHub, GitLab ou BitBucket) com todos os códigos e midias incluídas na página.
