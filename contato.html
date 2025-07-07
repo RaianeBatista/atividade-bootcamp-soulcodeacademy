@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TechHub Academy</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="https://cdn-icons-png.flaticon.com/32/3079/3079508.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="https://cdn-icons-png.flaticon.com/180/3079/3079508.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="https://cdn-icons-png.flaticon.com/32/3079/3079508.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="https://cdn-icons-png.flaticon.com/16/3079/3079508.png"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+
+        <link
+            rel="stylesheet"
+            href="./bootstrap-5.3.7-dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="./css/custom-colors.css" />
+    </head>
+    <body class="bg-black-light">
+        <!-- Seção NavBar -->
+        <nav class="navbar navbar-expand-lg bg-black-total">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="./index.html"
+                    >TechHub Academy</a
+                >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./index.html"
+                                >Início</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link text-white"
+                                href="./index.html#sobre"
+                                >Sobre Nós</a
+                            >
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle text-white"
+                                href="./index.html#cursos"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Cursos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="./index.html#programacao"
+                                        >Programação</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="./index.html#design-digital"
+                                        >Design Digital</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="./index.html#marketing-digital"
+                                        >Marketing Digital</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="./index.html#data-science"
+                                        >Data Science</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="./index.html#cursos"
+                                        >Todos os Cursos</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link text-white"
+                                href="./index.html#metodologia"
+                                >Metodologia</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link text-white active"
+                                href="./contato.html"
+                                >Contato</a
+                            >
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Buscar cursos..."
+                            aria-label="Search"
+                        />
+                        <button
+                            class="btn btn-orange text-white fw-bold px-4"
+                            type="submit"
+                        >
+                            Buscar
+                        </button>
+                    </form>
+                    <div class="d-flex">
+                        <a
+                            href="./index.html#matricula"
+                            class="btn btn-orange text-white fw-bold px-4 ms-2"
+                        >
+                            Matricule-se
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Seção Hero de Contato -->
+        <section class="bg-gradient-orange-black py-5">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-4 text-white fw-bold mb-3">
+                            Fale Conosco
+                        </h1>
+                        <p class="lead text-white-75 mb-4">
+                            Tem dúvidas sobre nossos cursos? Quer saber mais
+                            sobre nossa metodologia? Entre em contato conosco!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Formulário de Contato -->
+                    <div class="col-lg-8 mb-5">
+                        <div class="card border-0 shadow-lg">
+                            <div class="card-body p-4 p-lg-5">
+                                <h3 class="text-orange fw-bold mb-4">
+                                    Envie sua Mensagem
+                                </h3>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label
+                                                for="nome"
+                                                class="form-label fw-bold"
+                                            >
+                                                Nome Completo *
+                                            </label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="nome"
+                                                name="nome"
+                                                required
+                                                placeholder="Seu nome completo"
+                                            />
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label
+                                                for="email"
+                                                class="form-label fw-bold"
+                                            >
+                                                E-mail *
+                                            </label>
+                                            <input
+                                                type="email"
+                                                class="form-control"
+                                                id="email"
+                                                name="email"
+                                                required
+                                                placeholder="seu@email.com"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label
+                                                for="telefone"
+                                                class="form-label fw-bold"
+                                            >
+                                                Telefone
+                                            </label>
+                                            <input
+                                                type="tel"
+                                                class="form-control"
+                                                id="telefone"
+                                                name="telefone"
+                                                placeholder="(11) 99999-9999"
+                                            />
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label
+                                                for="interesse"
+                                                class="form-label fw-bold"
+                                            >
+                                                Área de Interesse
+                                            </label>
+                                            <select
+                                                class="form-select"
+                                                id="interesse"
+                                                name="interesse"
+                                            >
+                                                <option value="">
+                                                    Selecione uma opção
+                                                </option>
+                                                <option value="programacao">
+                                                    Programação
+                                                </option>
+                                                <option value="design">
+                                                    Design Digital
+                                                </option>
+                                                <option value="marketing">
+                                                    Marketing Digital
+                                                </option>
+                                                <option value="data-science">
+                                                    Data Science
+                                                </option>
+                                                <option
+                                                    value="informacoes-gerais"
+                                                >
+                                                    Informações Gerais
+                                                </option>
+                                                <option value="outros">
+                                                    Outros
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label
+                                            for="assunto"
+                                            class="form-label fw-bold"
+                                        >
+                                            Assunto *
+                                        </label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="assunto"
+                                            name="assunto"
+                                            required
+                                            placeholder="Qual o assunto da sua mensagem?"
+                                        />
+                                    </div>
+                                    <div class="mb-4">
+                                        <label
+                                            for="mensagem"
+                                            class="form-label fw-bold"
+                                        >
+                                            Mensagem *
+                                        </label>
+                                        <textarea
+                                            class="form-control"
+                                            id="mensagem"
+                                            name="mensagem"
+                                            rows="5"
+                                            required
+                                            placeholder="Escreva sua mensagem aqui..."
+                                        ></textarea>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input
+                                            type="checkbox"
+                                            class="form-check-input"
+                                            id="newsletter"
+                                            name="newsletter"
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="newsletter"
+                                        >
+                                            Quero receber novidades e promoções
+                                            por e-mail
+                                        </label>
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        class="btn btn-orange text-white fw-bold px-4 py-2"
+                                    >
+                                        <i class="fas fa-paper-plane me-2"></i>
+                                        Enviar Mensagem
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Informações de Contato -->
+                    <div class="col-lg-4">
+                        <div
+                            class="card border-0 shadow-lg bg-black-total text-white"
+                        >
+                            <div class="card-body p-4">
+                                <h4 class="text-orange fw-bold mb-4">
+                                    Informações de Contato
+                                </h4>
+
+                                <div class="d-flex align-items-start mb-4">
+                                    <div class="text-orange me-3 fs-5">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Endereço</h6>
+                                        <p class="text-white-50 mb-0">
+                                            Rua da Tecnologia, 123<br />
+                                            Vila Digital - São Paulo, SP<br />
+                                            CEP: 01234-567
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-start mb-4">
+                                    <div class="text-orange me-3 fs-5">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Telefone</h6>
+                                        <p class="text-white-50 mb-0">
+                                            (11) 9999-9999<br />
+                                            <small
+                                                >Segunda a sexta, 8h às
+                                                18h</small
+                                            >
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-start mb-4">
+                                    <div class="text-orange me-3 fs-5">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">E-mail</h6>
+                                        <p class="text-white-50 mb-0">
+                                            contato@techhubacademy.com.br
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-start mb-4">
+                                    <div class="text-orange me-3 fs-5">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">
+                                            Horário de Atendimento
+                                        </h6>
+                                        <p class="text-white-50 mb-0">
+                                            Segunda a sexta: 8h às 18h<br />
+                                            Sábado: 9h às 12h
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <hr class="border-orange my-4" />
+
+                                <h6 class="text-orange fw-bold mb-3">
+                                    Redes Sociais
+                                </h6>
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="text-orange fs-4">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="text-orange fs-4">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="text-orange fs-4">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="text-orange fs-4">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botão Voltar -->
+                        <div class="mt-4">
+                            <a
+                                href="./index.html"
+                                class="btn btn-outline-orange fw-bold w-100"
+                            >
+                                <i class="fas fa-arrow-left me-2"></i>
+                                Voltar para a Página Inicial
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Footer -->
+        <footer class="bg-black-total text-white py-5 mt-5">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h5 class="text-orange fw-bold mb-3">
+                            TechHub Academy
+                        </h5>
+                        <p class="text-white-50">
+                            Transformando vidas através da educação digital.
+                            Cursos práticos e projetos reais para o mercado de
+                            trabalho.
+                        </p>
+                        <div
+                            class="d-flex gap-3 justify-content-center justify-content-md-start"
+                        >
+                            <a href="#" class="text-orange">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-orange">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-orange">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-orange">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h6 class="text-orange fw-bold mb-3">Cursos</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Programação</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Design Digital</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Marketing Digital</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Data Science</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h6 class="text-orange fw-bold mb-3">Institucional</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Sobre Nós</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Metodologia</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Instrutores</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Carreiras</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="contato" class="col-lg-3 col-md-6 mb-4">
+                        <h6 class="text-orange fw-bold mb-3">Contato</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 text-white-50">
+                                <i class="fas fa-envelope me-2"></i>
+                                contato@techhubacademy.com.br
+                            </li>
+                            <li class="mb-2 text-white-50">
+                                <i class="fas fa-phone me-2"></i>
+                                (11) 9999-9999
+                            </li>
+                            <li class="mb-2 text-white-50">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                São Paulo, SP
+                            </li>
+                        </ul>
+                        <span
+                            class="btn btn-orange text-white fw-bold mt-3 disabled"
+                        >
+                            <i class="fas fa-check me-2"></i>
+                            Você está aqui!
+                        </span>
+                    </div>
+                </div>
+
+                <hr class="border-orange my-4" />
+
+                <div class="row align-items-center text-center text-md-start">
+                    <div class="col-md-6">
+                        <small class="text-white-50">
+                            © 2025 TechHub Academy. Todos os direitos
+                            reservados.
+                        </small>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <small class="text-white-50">
+                            <a
+                                href="#"
+                                class="text-white-50 text-decoration-none me-3"
+                                >Termos de Uso</a
+                            >
+                            <a
+                                href="#"
+                                class="text-white-50 text-decoration-none"
+                                >Política de Privacidade</a
+                            >
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
